@@ -1,0 +1,359 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: border-box;
+    font-family: Arial;
+}
+.border{
+    border: 1px solid transparent;
+}
+.border:hover{
+    border: 1px solid white;
+    cursor: pointer;
+    border-radius: 2%;
+}
+.underline{
+    text-decoration: none;
+}
+.underline:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.underline2{
+    text-decoration: none;
+}
+.underline2:hover{
+    color: rgb(255, 81, 0);
+    text-decoration: underline;
+    cursor: pointer;
+}
+.boximage:hover{
+    cursor: pointer;
+}
+.box2image:hover{
+    cursor: pointer;
+}
+
+@keyframes banner {
+    0%{
+        transform: translateX(0);
+    }
+    24%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(-99vw);
+    }
+    49%{
+        transform: translateX(-99vw);
+    }
+    50%{
+        transform: translateX(-197vw);
+    }
+    74%{
+        transform: translateX(-197vw);
+    }
+    75%{
+        transform: translateX(-297vw);
+    }
+    99%{
+        transform: translateX(-297vw);
+    }
+    100%{
+        transform: translateX(-400vw);
+    }
+}
+
+                                        /* header */
+.nav{
+    display: flex;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+}
+.logo{
+    height: 55px;
+}
+.nav{
+    height: 60px;
+    width: 100%;
+    background-color: rgb(19, 25, 33);
+    display: flex;
+    justify-content: space-evenly;
+}
+.location{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    height: 50px;
+    padding: 1px;
+}
+.loaction-line1{
+    margin-top: 6px;
+    margin-left: 15px;
+    font-size: 12px;
+}
+.location-line2{
+    display: flex;
+}
+.text{
+    font-size: 14px;
+    font-weight: 300;
+    margin-left: 1px;
+}
+.search{
+    height: 40px;
+    width: 50vw;
+    background-color: #febd68;
+    margin-left: 30px;
+    overflow: hidden;
+    display: flex;
+    border-radius: 5px;
+}
+.search select{
+    background-color: #F3F3F3;
+    width: 60px;
+    padding-left: 14px;
+    border: none;
+}
+.search-input input{
+    height: 40px;
+    width: 41vw;
+    padding-left: 10px;
+    border: none;
+    font-size: 1rem;
+}
+.search-icon{
+    margin-top: 10px;
+    margin-left: 15px;
+    font-size: 1.2rem;
+}
+.language{
+    display: flex;
+    color: white;
+    padding: 10px;
+}
+.language img{
+    height: 16px;
+}
+.language p{
+    padding-left: 2px;
+    font-size: 15px;
+    font-weight: 700;
+}
+.signin{
+    color: white;    
+    padding: 10px;
+}
+.sline1{
+    font-size: 12px;
+}
+.sline2{
+    font-size: 14px;
+    font-weight: 600;
+}
+.orders{
+    color: white;
+    padding: 10px;
+}
+.orders-line1{
+    font-size: 12px;
+}
+.orders-line2{
+    font-size: 14px;
+    font-weight: 600;
+}
+.cart{
+    display: flex;
+    color: white;
+    padding: 8px;
+}
+.cart-logo{
+    font-size: 26px;
+}
+.cart-text{
+    padding-top: 10px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+                                        /* content */
+
+
+.headspace{
+    height: 60px;
+    width: 100%;
+}
+.content{
+    min-height: 80vh;
+    width: 100%;
+}
+.categories{
+    color: white;
+    background-color: rgb(35, 47, 62);
+    height: 40px;
+}
+.categories ul{
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    /* padding-top: 4px; */
+    font-size: 0.9rem;
+}
+.categories ul li{
+    padding: 5px 6px;
+}
+
+.banner{
+    height: 250px;
+    width: 1349px;
+    display: flex;
+    overflow: hidden;
+}
+.bannerclass{
+    animation: banner 20s linear infinite;
+}
+.items{
+    background-color: rgb(227, 230, 230);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.box{
+    height: 400px;
+    width: 23%;
+    background-color: white;
+    overflow: hidden;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.box h2{
+    padding-top: 10px;
+    padding-left: 15px;
+}
+.boximage{
+    height: 265px;
+    width: 265px;
+    margin-top: 10px;
+    margin-left: 20px;
+    overflow: hidden;
+}
+.box p{
+    margin: 20px;
+    font-size: 0.9rem;
+    color: #007185;
+}
+.box2{
+    height: 400px;
+    width: 23%;
+    background-color: white;
+    overflow: hidden;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.box2 h2{
+    padding-top: 6px;
+    padding-left: 15px;
+}
+.box2image{
+    height: 343px;
+    width: 277px;
+    margin-top: 10px;
+    margin-left: 17px;
+    overflow: hidden;
+}        
+
+                                        /* footer */                                     
+.btt{
+    height: 50px;
+    width: 100%;
+    background-color: rgb(55, 71, 90);
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+}
+.btt p{
+    padding-top: 15px;
+}
+.btt:hover{
+    background-color: rgb(75, 88, 104);
+    cursor: pointer;
+}
+.connect{
+    height: 42vh;
+    width: 100%;
+    background-color: rgb(35, 47, 62);
+    display: flex;
+    color: white;
+    justify-content: space-evenly;
+    padding-top: 50px;
+}
+.section1 p{
+    padding: 5px 0;
+    font-size: 0.9rem;
+}
+.heading1 p{
+    font-size: 1.01rem;
+    font-weight: bolder;
+}
+.footerline1{
+    height: 1px;
+    width: 100%;
+    background-color: rgba(192, 192, 192, 0.322);
+}
+.footer-country{
+    height: 18vh;
+    width: 100%;
+    padding-top: 30px;
+    background-color: rgb(35, 47, 62);
+}
+.footer-country-select{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer-country-select-logo img{
+    height: 45px;
+    margin-right: 80px;
+}
+.footer-country-select-options select{
+    height: 30px;
+    width: 100px;
+    background-color: rgb(35, 47, 62) ;
+    color: white;
+    border-radius: 3px;
+    padding-left: 10px;
+}
+.footer-country-list ul{
+    display: flex;
+    color: white;
+    padding: 10px 200px;
+    justify-content: space-evenly;
+    text-decoration: none;
+    list-style-type: none;
+    font-size: 0.8rem;
+}
+.footer-copyright{
+    color: white;
+    background-color: rgb(19, 26, 34);
+    height: 12vh;
+    width: 100%;
+}
+.footer-copyright-line1 ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-evenly;
+    padding: 0 450px;
+    padding-top: 25px;
+}
+.footer-copyright-line1 ul li{
+    font-size: 0.8rem;
+}
+.footer-copyright-line2{
+    text-align: center;
+}       
+.footer-copyright-line2 p{
+    font-size: 0.8rem;
+    padding-top: 5px;
+}         
